@@ -11,7 +11,7 @@ extern "C" {
  */
 #define _(S) (S)
 
-int writeptm( IMAGE *in, const char *filename, double *scale, int *bias );
+int writeptm( VipsImage *in, const char *filename, double *scale, int *bias );
 
 #ifdef __cplusplus
 }

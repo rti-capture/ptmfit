@@ -15,7 +15,7 @@ struct RGB_Image
 {
   int xsize, ysize;		/* size of image */
 
-  vips::VImage im;
+  VImage im;
 
   float x;
   float y;

@@ -8,14 +8,12 @@
 #include <math.h>
 #include <string.h>
 
-#include <vips/vips8>
+#include <vips/vips.h>
 
 #include "computepoly.h"
 #include "LinearSystem.h"
 
-#define INTERNAL_FEATURES_ENABLE // for internal release only
-
-#define VERSION_NUMBER 1.01
+#define VERSION_NUMBER 1.02
 
 char lpfile[STRSIZE];
 char fname[STRSIZE];
@@ -170,14 +168,17 @@ int
 main(int argc, char* argv[])
 {
 	printf("Fast Polynomial Texture Map (PTM) Fitter\n");
-	printf("based on Hewlett-Packard Code from 2001. All rights reserved.\n");
+	printf("based on Hewlett-Packard Code from 2001\n");
 	
 	//Gather user input
 
 	int stat;
 
 	if (VIPS_INIT(argv[0]))
+		{
+		vips_error_exit("unable to start VIPS");
 		return(-1);
+		}
 
 	compute_polys_get_type();
 
