@@ -1,4 +1,10 @@
 # ptmfit program with libvips backend
+DEVELOPPENT OF THE 2014 version by JC
+needs: 
+new svd.c
+some path smarts
+easy cross compile for win10 and mac
+----------
 
 image are uncompressed to disc temps in /tmp, or in $TMPDIR, if set
 
