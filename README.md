@@ -2,6 +2,8 @@
 development of the 2014 version by JC
 needs: 
 
+modernising for newest VIPS
+
 new svd.c
 
 some path smarts
