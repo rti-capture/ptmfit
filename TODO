@@ -1,0 +1,21 @@
+- does bottom-to-top write work OK on windows? 
+
+- test crop + sequential
+
+- can we get memuse down? it seems to rise on the 2nd pass, are we not freeing
+  something?
+
+- replace svd stuff
+
+- verify again
+
+- rewrite for v3:
+
+	- .lp format is stupid
+	- interactive mode is stupid
+	- .ptm format is stupid
+	- LinearSystem is stupid
+	- main arg parsing is stupid
+	- probably very leaky
+
+

@@ -1,0 +1,21 @@
+1/2/17 started 2.4
+- forked from soton SVN on 1/2/17
+
+8/5/11 started 2.3
+- updated for vips-7.24
+- removed discopen.[hc], this is part of vips now
+
+24/7/10 started v 2.0
+- removed all image file load stuff, use VImage instead
+- removed RGB fit, just implement the default luminance stuff for now
+
+24/7/10 started v 1.1
+- fix up formatting a bit more
+- fix some compiler warnings
+- remove .ptm file version 1.1 write support
+- remove rowbyrow support
+- remove unused LinearSystem::InitializeColorMatrix
+- remove unimplemented weighting support
+- better Makefile
+- removed YCbCr stuff
+
