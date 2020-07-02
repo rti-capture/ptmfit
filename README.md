@@ -1,5 +1,5 @@
 # ptmfit program with libvips backend
-DEVELOPPENT OF THE 2014 version by JC
+DEVELOPENT OF THE 2014 version by JC
 needs: 
 new svd.c
 some path smarts
