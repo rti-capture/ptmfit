@@ -21,18 +21,24 @@ This fitting update should make it more user friendly:
 By executing main.exe the user gets prompted for several inputs:
 
 1)Input directory where samples are located eg. D:\sample06
+
 2)Input prefix of the actual images files(ppm). If the files are called
 ex-001.pppm, ex-002.ppm and so forth one should input “ex”. See remarks for
 more info.
+
 3)Select format RGB or LRGB. Code works for both, RGB fits 3 polynomials and
 LRGB fits 1 polynomial for luminance and average rgb value.
+
 4)Weighting scheme: right now only the choice 0 (NONE) is supported.
+
 5)UNIVARIATE or BIVARIATE: Typically one selects  BIVARIATE (0). Some of the
 animations you might have seen (the Golden gate sequence) uses univariate.
 Here still 3 coordinates are specified but only x is used. 
+
 6)Number of images to be used: -1 uses all, a number  N>0 has the effect that
 only the first N images are used for fitting. The last M-N images are
 discarded (M = total number of images)
+
 7)Output file: Specify name including the entire path. The program appends the
 exetnsion .ppm
 
